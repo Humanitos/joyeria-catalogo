@@ -1,0 +1,15 @@
+/* >>> >>> >>> >>> >>> Variables <<< <<< <<< <<< <<< */
+:root {
+    font-size: 20px;
+
+    --title-size: 2.5rem;
+    --subtitle-size: 1.5rem;
+}
+
+/* >>> >>> >>> >>> >>> title <<< <<< <<< <<< <<< */
+.title-structure {
+    margin: 0;
+}
+.title-skin {
+    color: var(--palette-4);
+}
