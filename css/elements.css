@@ -1,15 +1,137 @@
-/* >>> >>> >>> >>> >>> Variables <<< <<< <<< <<< <<< */
+/* >>> >>> >>> >>> >>> vonts <<< <<< <<< <<< <<< */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    background-color: var(--palette-4);
+    color: var(--palette-1);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* >>> >>> >>> >>> >>> variables <<< <<< <<< <<< <<< */
 :root {
     font-size: 20px;
 
-    --title-size: 2.5rem;
-    --subtitle-size: 1.5rem;
+    --title-size: 2.0rem;
+    --subtitle-size: 1.0rem;
+    --initials-size: 8rem;
+
+    --title-family: 'Luxurious Script', cursive;
+    --subtitle-family: 'Poppins', sans-serif;
+    --initials-family: 'luxurious script', cursive;
+    
 }
+
+/* >>> >>> >>> >>> >>> logo <<< <<< <<< <<< <<< */
+.logo-structure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* >>> >>> >>> >>> >>> initials <<< <<< <<< <<< <<< */
+.initials-structure {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding-right: 3rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.initials-skin {
+    font-size: var(--initials-size);
+    font-family: var(--initials-family);
+    color: var(--palette-4);
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    opacity: 0.3;
+    text-shadow: 1px 1px 0px var(--palette-1);
+}
+
+
+/* >>> >>> >>> >>> >>> slogan <<< <<< <<< <<< <<< */
+.slogan-structure {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+}
+
 
 /* >>> >>> >>> >>> >>> title <<< <<< <<< <<< <<< */
 .title-structure {
+    padding: 0;
     margin: 0;
+    letter-spacing: 0.5rem;
 }
+
 .title-skin {
+    color: var(--palette-4);
+    font-size: var(--title-size);
+    font-family: var(--title-family);
+    font-weight: 100;
+    text-shadow: 1px 1px 0px #000;
+}
+
+/* >>> >>> >>> >>> >>> subtitle <<< <<< <<< <<< <<< */
+.subtitle-structure {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1rem;
+}
+.subtitle-skin {
+    color: var(--palette-4);
+    opacity: 0.6;
+    font-weight:100;
+    font-size: var(--subtitle-size);
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+}
+
+/* >>> >>> >>> >>> >>> separator <<< <<< <<< <<< <<< */
+.separator-structure {
+    width: 40%;
+    margin: 1rem;
+}
+.separator-skin {
+    border-color: var(--palette-3);
+}
+
+/* >>> >>> >>> >>> >>> list <<< <<< <<< <<< <<< */
+.list-structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+/* >>> >>> >>> >>> >>> item <<< <<< <<< <<< <<< */
+.item-structure {
+    margin: 0 1rem;
+}
+.item-skin {
+    list-style: none;
+    color: var(--palette-3);
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    user-select: none;
+}
+
+.item-skin:hover{
     color: var(--palette-4);
 }
