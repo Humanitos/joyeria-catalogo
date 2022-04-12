@@ -25,7 +25,6 @@
     --title-family: 'Luxurious Script', cursive;
     --subtitle-family: 'Poppins', sans-serif;
     --initials-family: 'luxurious script', cursive;
-    
 }
 
 /* >>> >>> >>> >>> >>> logo <<< <<< <<< <<< <<< */
@@ -58,14 +57,12 @@
     text-shadow: 1px 1px 0px var(--palette-1);
 }
 
-
 /* >>> >>> >>> >>> >>> slogan <<< <<< <<< <<< <<< */
 .slogan-structure {
     width: fit-content;
     height: fit-content;
     padding: 0.5rem;
 }
-
 
 /* >>> >>> >>> >>> >>> title <<< <<< <<< <<< <<< */
 .title-structure {
@@ -82,6 +79,11 @@
     text-shadow: 1px 1px 0px #000;
 }
 
+.main-skin .title-skin{
+    font-family: var(--subtitle-family);
+    font-size: var(--subtitle-size);
+}
+
 /* >>> >>> >>> >>> >>> subtitle <<< <<< <<< <<< <<< */
 .subtitle-structure {
     margin: 0;
@@ -90,7 +92,7 @@
 }
 .subtitle-skin {
     color: var(--palette-4);
-    opacity: 0.6;
+    opacity: 0.8;
     font-weight:100;
     font-size: var(--subtitle-size);
     text-align: center;
@@ -130,8 +132,118 @@
     -ms-transition: color 0.3s;
     -o-transition: color 0.3s;
     user-select: none;
+    text-decoration: none;
 }
 
 .item-skin:hover{
     color: var(--palette-4);
+}
+
+/* >>> >>> >>> >>> >>> sublist <<< <<< <<< <<< <<< */
+.sublist-structure {
+    display: none;
+	position:absolute;
+	padding: 0;
+    margin: 0;
+}
+.sublist-skin {
+}
+
+/* >>> >>> >>> >>> >>> subitem <<< <<< <<< <<< <<< */
+.subitem-structure {
+    text-align: left;
+    float: none;
+    margin: 0.7rem 0;
+    width: fit-content;
+}
+
+.subitem-skin {
+    list-style: none;
+    color: var(--palette-3);
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.subitem-skin:hover{
+    color: var(--palette-4);
+}
+
+/* >>> >>> >>> >>> >>> products <<< <<< <<< <<< <<< */
+.products-structure {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+/* >>> >>> >>> >>> >>> card <<< <<< <<< <<< <<< */
+.card-structure {
+    margin: 1rem;
+    height: fit-content;
+    text-align: center;
+}
+
+/* >>> >>> >>> >>> >>> image <<< <<< <<< <<< <<< */
+.card-skin .image-structure {
+    width: 100%;
+}
+
+/* >>> >>> >>> >>> >>> decoration <<< <<< <<< <<< <<< */
+.decoration-structure {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* >>> >>> >>> >>> >>> separator <<< <<< <<< <<< <<< */
+.card-skin .separator-structure {
+    width: 30%;
+}
+
+/* >>> >>> >>> >>> >>> diamond <<< <<< <<< <<< <<< */
+.diamond-structure {
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.diamond-skin {
+    border: solid var(--palette-4) 1px;
+    background-color: var(--palette-2);
+}
+
+/* >>> >>> >>> >>> >>> title <<< <<< <<< <<< <<< */
+.card-skin .title-structure {
+    margin: 0;
+}
+
+/* >>> >>> >>> >>> >>> material <<< <<< <<< <<< <<< */
+.material-structure {
+    margin: 0;
+    padding: 0;
+}
+.material-skin {
+    font-size: var(--subtitle-size);
+    font-family: var(--subtitle-family);
+    color: var(--palette-3);
+}
+
+/* >>> >>> >>> >>> >>> precio <<< <<< <<< <<< <<< */
+.precio-structure {
+    margin: 0;
+    padding: 0;
+}
+.precio-skin {
+    font-size: var(--subtitle-size);
+    font-family: var(--subtitle-family);
+    color: var(--palette-3);    
 }

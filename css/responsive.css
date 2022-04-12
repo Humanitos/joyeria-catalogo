@@ -1,0 +1,16 @@
+/* >>> >>> >>> >>> >>> Media query <<< <<< <<< <<< <<< */
+@media screen and (min-width: 361px) and (max-width: 460px) {
+
+    :root{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+}
