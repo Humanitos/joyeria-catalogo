@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
 }
 
 *::selection{
@@ -25,6 +30,47 @@
     --title-family: 'Luxurious Script', cursive;
     --subtitle-family: 'Poppins', sans-serif;
     --initials-family: 'luxurious script', cursive;
+}
+
+/*----------Preloader container----------*/
+.preloader-container-structure {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-container-skin {
+    background-color: #000;
+}
+
+/*----------Preloader----------*/
+.preloader-structure {
+    width: 100px;
+    height: 100px;
+}
+
+.preloader-skin {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+/*----------Preloader animation----------*/
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 /* >>> >>> >>> >>> >>> logo <<< <<< <<< <<< <<< */
@@ -126,11 +172,11 @@
     list-style: none;
     color: var(--palette-3);
     cursor: pointer;
-    transition: color 0.3s;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    -ms-transition: color 0.3s;
-    -o-transition: color 0.3s;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
     user-select: none;
     text-decoration: none;
 }
@@ -141,11 +187,13 @@
 
 /* >>> >>> >>> >>> >>> sublist <<< <<< <<< <<< <<< */
 .sublist-structure {
-    display: none;
-	position:absolute;
+    display: block;
+    opacity: 1;
+    position: absolute;
 	padding: 0;
     margin: 0;
 }
+
 .sublist-skin {
 }
 
@@ -165,6 +213,7 @@
     -moz-transition: color 0.3s;
     -ms-transition: color 0.3s;
     -o-transition: color 0.3s;
+    text-shadow: 1px 1px 0px #000;
 }
 
 .subitem-skin:hover{
@@ -174,8 +223,8 @@
 /* >>> >>> >>> >>> >>> products <<< <<< <<< <<< <<< */
 .products-structure {
     width: 100%;
-    height: 100%;
     display: grid;
+    padding: 1rem 0;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
@@ -183,12 +232,14 @@
 .card-structure {
     margin: 1rem;
     height: fit-content;
+    max-width: 30rem;
     text-align: center;
 }
 
 /* >>> >>> >>> >>> >>> image <<< <<< <<< <<< <<< */
 .card-skin .image-structure {
     width: 100%;
+    cursor: pointer;
 }
 
 /* >>> >>> >>> >>> >>> decoration <<< <<< <<< <<< <<< */
@@ -237,13 +288,56 @@
     color: var(--palette-3);
 }
 
-/* >>> >>> >>> >>> >>> precio <<< <<< <<< <<< <<< */
-.precio-structure {
+/* >>> >>> >>> >>> >>> price <<< <<< <<< <<< <<< */
+.price-structure {
     margin: 0;
     padding: 0;
 }
-.precio-skin {
+.price-skin {
     font-size: var(--subtitle-size);
     font-family: var(--subtitle-family);
     color: var(--palette-3);    
+}
+
+/* >>> >>> >>> >>> >>> company-skin <<< <<< <<< <<< <<< */
+.footer-skin * .subtitle-skin{
+    text-align: left;
+}
+
+/* >>> >>> >>> >>> >>> footeritem <<< <<< <<< <<< <<< */
+.footeritem-structure {
+    margin: 0;
+    padding: 0;
+}
+
+.footeritem-skin {
+    font-size: 0.8rem;
+    font-family: var(--subtitle-family);
+    color: var(--palette-3);
+    text-shadow: 1px 1px 0px #000;
+}
+
+/* >>> >>> >>> >>> >>> footersections <<< <<< <<< <<< <<< */
+.footersections-structure {
+    margin: 1rem;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* >>> >>> >>> >>> >>> copyright <<< <<< <<< <<< <<< */
+.copyright-skin {
+    color: var(--palette-3);
+    font-size: var(--subtitle-size);
+    text-shadow: 1px 1px 0px #000;
+}
+
+*.fadeOpacity{
+    opacity: 0;
+}
+
+*.fadeDisplay{
+    display: none;
 }

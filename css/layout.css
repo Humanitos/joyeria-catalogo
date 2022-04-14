@@ -8,7 +8,7 @@ html{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(25vh, 10rem) minmax(75vh, 1fr) minmax(30vh, 1rem);
+    grid-template-rows: minmax(25vh, 10rem) minmax(75vh, 1fr) auto;
     grid-template-areas:
     "header"
     "main"
@@ -38,11 +38,37 @@ html{
 .footer-structure {
     grid-area: footer;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-between;
     align-items: center;
+    padding: 1rem;
 }
 
 .footer-skin{
     border-top: 1px var(--palette-2) solid;
-    background-color: var(--palette-2);
+}
+
+/* >>> >>> >>> >>> >>> company <<< <<< <<< <<< <<< */
+.company-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* >>> >>> >>> >>> >>> social <<< <<< <<< <<< <<< */
+.social-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* >>> >>> >>> >>> >>> copyright <<< <<< <<< <<< <<< */
+.copyright-structure, .copyright-structure * {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
