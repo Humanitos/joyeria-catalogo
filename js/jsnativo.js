@@ -61,7 +61,7 @@ function createCard(image, name, mineral, cost, category) {
     let separator2 = "<hr class='separator-structure separator-skin'></hr>";
     let title = "<h2 class='title-structure title-skin'>" + name + "</h2>";
     let material = "<h2 class='material-structure material-skin'>" + mineral + "</h2>";
-    let price = "<h2 class='price-structure price-skin'>" + cost + "</h2>";
+    let price = "<h2 class='price-structure price-skin'>" + cost + "$</h2>";
     decoration += separator + diamond + separator2 + "</div>";
     card += photo + decoration + title + material + price + "</div>";
 
