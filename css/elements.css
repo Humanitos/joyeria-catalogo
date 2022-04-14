@@ -136,6 +136,7 @@
     padding: 0;
     letter-spacing: 0.1rem;
 }
+
 .subtitle-skin {
     color: var(--palette-4);
     opacity: 0.8;
@@ -150,6 +151,7 @@
     width: 40%;
     margin: 1rem;
 }
+
 .separator-skin {
     border-color: var(--palette-3);
 }
@@ -168,6 +170,7 @@
 .item-structure {
     margin: 0 1rem;
 }
+
 .item-skin {
     list-style: none;
     color: var(--palette-3);
@@ -192,9 +195,6 @@
     position: absolute;
 	padding: 0;
     margin: 0;
-}
-
-.sublist-skin {
 }
 
 /* >>> >>> >>> >>> >>> subitem <<< <<< <<< <<< <<< */
@@ -267,6 +267,7 @@
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
+
 .diamond-skin {
     border: solid var(--palette-4) 1px;
     background-color: var(--palette-2);
@@ -282,6 +283,7 @@
     margin: 0;
     padding: 0;
 }
+
 .material-skin {
     font-size: var(--subtitle-size);
     font-family: var(--subtitle-family);
@@ -293,6 +295,7 @@
     margin: 0;
     padding: 0;
 }
+
 .price-skin {
     font-size: var(--subtitle-size);
     font-family: var(--subtitle-family);
@@ -334,6 +337,7 @@
     text-shadow: 1px 1px 0px #000;
 }
 
+/* >>> >>> >>> >>> >>> Fade <<< <<< <<< <<< <<< */
 *.fadeOpacity{
     opacity: 0;
 }
