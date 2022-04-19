@@ -30,6 +30,11 @@
     --title-family: 'Luxurious Script', cursive;
     --subtitle-family: 'Poppins', sans-serif;
     --initials-family: 'luxurious script', cursive;
+
+    --palette-1: #171010;
+    --palette-2: #272727;
+    --palette-3: #4c4c4c;
+    --palette-4: #dedede;
 }
 
 /*----------Preloader container----------*/
