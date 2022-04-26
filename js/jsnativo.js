@@ -32,7 +32,7 @@ function show(element) {
 function productsRequest() {
     let categories = [];
     request = new XMLHttpRequest();
-    request.open('GET', '//tumorserver.ddns.net/joyeria/mostrar-productos.php', true);
+    request.open('GET', 'https://speechless-wines.000webhostapp.com/joyeria/mostrar-productos.php', true);
     request.onload = function () {
         if (request.status >= 200 && request.status < 400) {
             let data = JSON.parse(this.response);
